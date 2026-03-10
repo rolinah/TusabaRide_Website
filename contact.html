@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Tusaba Ride</title>
+  <link rel="icon" type="image/png" href="assets/images/tusaba-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+        <img src="assets/tusaba-logo.jpeg" alt="Tusaba Ride" class="logo-img">
+    <span class="logo-text">TusabaRide</span>
+    </a>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="signup.html" class="btn-signup">Sign Up</a>
+      <a href="login.html" class="btn-login">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
+        </svg>
+        Login
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main style="flex:1">
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Get In Touch
+      </span>
+      <h1 class="page-title">We'd Love to Hear from You</h1>
+      <p class="page-intro">
+        Want to partner with us, join as a rider, or bring Tusaba Ride to your university? We're always open to conversations that make campus transport safer.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact grid -->
+  <section class="content-section">
+    <div class="container-narrow">
+      <div class="contact-grid">
+        <!-- Left: info -->
+        <div class="contact-info">
+          <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--green); margin-bottom:0.75rem">Contact Details</p>
+          <h2 class="section-heading-sm" style="margin-bottom:1.5rem">Reach Us Directly</h2>
+
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-label">Email Support</div>
+              <div class="contact-value"><a href="mailto:support@tusabaride.com">support@tusabaride.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">Coming soon — use email for now</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Partner universities across Uganda</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-label">Response Time</div>
+              <div class="contact-value">We typically reply within 24 hours</div>
+            </div>
+          </div>
+
+          <!-- Steps -->
+          <div style="margin-top:2rem">
+            <h3 style="font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:1rem">How Partnerships Work</h3>
+            <ol class="steps-list">
+              <li>
+                <span class="step-badge">1</span>
+                <span>Email or contact us to start the conversation about your university</span>
+              </li>
+              <li>
+                <span class="step-badge">2</span>
+                <span>We schedule a campus demo and assessment visit</span>
+              </li>
+              <li>
+                <span class="step-badge">3</span>
+                <span>Formalize the university partnership agreement together</span>
+              </li>
+              <li>
+                <span class="step-badge">4</span>
+                <span>Onboard riders and go live — your campus moves safely</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div>
+          <div class="contact-form-card">
+            <h3>Send us a Message</h3>
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label>I am a…</label>
+              <select style="width:100%;padding:0.75rem 1rem;border:1.5px solid #e4e8ef;border-radius:10px;font-size:0.95rem;font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--navy)">
+                <option>Student</option>
+                <option>University Admin</option>
+                <option>Prospective Rider</option>
+                <option>Investor / Partner</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Tell us how we can help…"
+                style="width:100%;padding:0.75rem 1rem;border:1.5px solid #e4e8ef;border-radius:10px;font-size:0.95rem;font-family:'DM Sans',sans-serif;background:var(--bg);resize:vertical;min-height:120px;color:var(--navy)"></textarea>
+            </div>
+            <button class="cta-button btn-full" onclick="this.textContent='Message Sent ✓';this.style.background='#0f2a58';setTimeout(()=>{this.textContent='Send Message';this.style.background=''},3000)">
+              Send Message
+            </button>
+            <p style="font-size:0.8rem;color:#8a9bb0;text-align:center;margin-top:1rem">This is a demo form. Connect to a backend to enable submissions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-cta">
+    <p class="section-label">Get Moving</p>
+    <h2 class="section-title-lg">Ready to Ride?</h2>
+    <p class="section-subtitle">Download the app and start riding safely on your campus today.</p>
+    <a href="index.html" class="cta-primary" style="margin:1.5rem auto 0">
+      Download App
+      <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-link" style="margin-bottom:1rem">
+        <img src="assets/images/tusaba-logo.png" alt="Tusaba Ride" class="logo-img" style="height:36px"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+        <span class="logo-text" style="display:none">TusabaRide</span>
+      </a>
+      <p class="footer-tagline">Safe, verified campus transport for university students across Uganda.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Students</h4>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+      <a href="#">Safety Centre</a>
+    </div>
+    <div class="footer-col">
+      <h4>Riders</h4>
+      <a href="signup.html">Become a Rider</a>
+      <a href="contact.html">Partner With Us</a>
+      <a href="#">Rider Safety</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 Tusaba Ride · Group 14 · Safe campus transport for students</span>
+    <span>Made with ❤ in Uganda</span>
+  </div>
+</footer>
+
+</body>
+</html>
